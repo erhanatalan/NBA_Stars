@@ -33,7 +33,7 @@ const Header = () => {
     <DivStyles>
       <img src={nba} alt="nba"/>
       <h1 className="display-1">NBA Legends</h1>
-      <input type="search" name="search" id="search" placeholder="Search Player..." onKeyDown={(e)=>setSearch(console.log(e.target.value))}/>
+      {/* <input type="search" name="search" id="search" placeholder="Search Player..." onKeyDown={(e)=>setSearch(console.log(e.target.value))}/> */}
 
     </DivStyles>
   )
