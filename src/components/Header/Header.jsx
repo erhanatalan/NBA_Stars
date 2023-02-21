@@ -1,6 +1,8 @@
 
 import nba from "../../Data/nba.png";
 import styled from "styled-components";
+import { useState } from "react";
+
 
 const DivStyles = styled.div` 
   padding: 1rem;
@@ -24,11 +26,14 @@ const DivStyles = styled.div`
 `;
 
 const Header = () => {
+
+  const [search, setSearch] = useState('')
+
   return (
     <DivStyles>
       <img src={nba} alt="nba"/>
       <h1 className="display-1">NBA Legends</h1>
-      <input type="search" name="" id="" placeholder="Search Player..."/>
+      <input type="search" name="search" id="search" placeholder="Search Player..." onKeyDown={(e)=>setSearch(console.log(e.target.value))}/>
 
     </DivStyles>
   )
